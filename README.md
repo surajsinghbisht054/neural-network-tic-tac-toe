@@ -21,6 +21,19 @@ Simple Tic Tac Toy Game Implentation In Python. Basically, In This Project, I Tr
 - Then, play game with this.
 
 
+# how to run it
+
+```
+git clone https://github.com/surajsinghbisht054/neural-network-tic-tac-toe
+cd neural-network-tic-tac-toe
+cd src
+python generate_dataset.py 
+python ann.py # <-- Run This Script, More Than Once to decrease error Rate
+cd ..
+python main.py
+
+```
+
 ### Note
 I'm also new in this subject So, Please Forgive me if I'm doing anything wrong and
 If You find that I'm doing anything wrong anywhere in this project. Please Feel Free To Correct me.

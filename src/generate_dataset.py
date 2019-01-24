@@ -209,13 +209,18 @@ def main(path):
     print "[*] Dataset Fastest Winning Possibilities : ", len(dataset.won[0])
     print "[*] Dataset Last End Winning Possibility  : ", len(dataset.won[-1])
 
+    min_win_possibility = len(dataset.won[0])
+
     with DatasetCollecter(filepath=path) as dwrite:
-        for row in dataset.won[:70000]:
+        for row in dataset.won:
+            # only minimum possibilities training
+            if len(row)!=min_win_possibility:
+                continue
             for a,b in arrange_dataset([row]):
                 dwrite[a]=b
 
         # Don't Trained for draw
-        for row in dataset.draw[:1]:
+        for row in dataset.draw:
             for a,b in arrange_dataset([row]):
                 dwrite[a]=b
         #print dwrite
