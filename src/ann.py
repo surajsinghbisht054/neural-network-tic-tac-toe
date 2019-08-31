@@ -29,7 +29,7 @@ from pybrain.datasets import SupervisedDataSet
 from pybrain.structure import FeedForwardNetwork
 from pybrain.structure import LinearLayer, SigmoidLayer, TanhLayer
 from pybrain.structure import FullConnection
-from pybrain.tools.xml import NetworkReader, NetworkWriter
+from pybrain.tools.customxml import NetworkReader, NetworkWriter
 from configuration import *
 import random
 import os

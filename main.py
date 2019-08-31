@@ -25,11 +25,11 @@
 #  import modules
 import os
 from src.conditions import pretifyboard, getaval
-from pybrain.tools.xml import NetworkReader
+from pybrain.tools.customxml import NetworkReader
 from src.conditions import checkend
 import random
 
-PATH = '/home/suraj/Desktop/Projects/neural-network-tic-tac-toe/tmp/computed_weight.weight'
+PATH = 'tmp/computed_weight.weight'
 
 
 class TicTacToe:
